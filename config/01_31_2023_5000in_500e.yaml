@@ -1,0 +1,25 @@
+---
+data:
+  train_data: "data_gdb13_training.npy"
+  test_data: "data_gdb13_test.npy"
+  input_size: 5000
+  output_size: 1000
+
+huckel:
+  elements_considered: ["H", "C", "N", "O", "S", "Cl"]
+  orbitals_considered: ["P", "S", "SP", "SP2", "SP3"]
+  value_calculated: homo_lumo
+
+model:
+  optimizer: optim.AdamW
+  learning_rate: 0.02
+  batch_size: 250
+  loss_fn: nn.L1Loss()
+  epochs: 500
+
+results:
+  results_directory: "01_31_2023_5000in_500e"
+  loss_curve: True
+  lowest_loss_parameters: True
+  lowest_loss_data: True
+  lowest_loss_graph: True
