@@ -5,4 +5,5 @@ Example below:
 ```
 sbatch run_from_config.sh 01_30_2023_test_config.yaml
 ```
-Run this command from the launcher_scripts folder
+Run this command from the launcher_scripts folder  
+(Data currently missing necessary for run, contact repo owner if interested in using code)
